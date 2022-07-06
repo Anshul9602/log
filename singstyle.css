@@ -1,0 +1,234 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(120deg, #2890b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    transform:translate(20%, 1%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    background-color: burlywood;
+}
+
+.container h1 {
+    text-align: center;
+    border-bottom: 2px solid rgb(205, 30, 59);
+}
+
+.container form {
+    padding: 20px 40px 12px 10px;
+    box-sizing: border-box;
+
+}
+
+form .Ntext {
+    font-size: 18px;
+    position: relative;
+    border-bottom: red;
+    margin: 0;
+}
+
+.Ntext input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+
+.Ntext span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+form .pass {
+    font-size: 18px;
+    position: relative;
+    border-bottom: red;
+    margin: 0;
+    
+}
+/* form .pass2 { 
+    font-size: 18px;
+    position: relative;
+    border-bottom: red;
+    margin: 0;
+
+} */
+
+.pass input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+/* .pass2 input { 
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+} */
+.pass span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+/* .pass2 span::before { 
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+ } */
+form .Email {
+    font-size: 18px;
+    position: relative;
+    border-bottom: red;
+    margin:0;
+}
+
+.Email span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.Email input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+form .country{
+    font-size: 18px;
+    position: relative;
+    padding: 0 0 10px;
+}
+form .countrycode{
+    padding: 0 0 10px;
+}
+form .Mobile {
+    font-size: 18px;
+    position: relative;
+    border-bottom: red;
+    margin: 0;
+}
+
+.Mobile input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    
+}
+.Mobile label{
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 5px;
+    transform: translate(10%);
+    font-size: 17px;
+    pointer-events: none;
+}
+
+.Mobile span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.Ntext input:focus~span::before,
+.pass input:focus~span::before,
+/* .pass2 input:focus~span::before, */
+.Email input:focus~span::before,
+.Mobile input:focus~span::before {
+    width: 100%;
+}
+
+.Ntext input:focus~label,
+.pass input:focus~label,
+/* .pass2 input:focus~label, */
+.Email input:focus~label,
+.Mobile input:focus~label{
+    top: -5px;
+    color: blue;
+}
+
+.check {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.check input {
+    cursor: pointer;
+}
+.submit {
+    padding: 0 20px;
+}
+input[type="Submit"] {
+    align-items: center;
+    width: 60%;
+    height: 35px;
+    border: 1px solid;
+    background: green;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="Reset"] {
+    align-items: center;
+    width: 30%;
+    height: 35px;
+    border: 1px solid;
+    background:blue;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
+}
